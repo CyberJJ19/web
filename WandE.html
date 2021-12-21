@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content = "width = device-width, initial-scale =1.0">
+    <title>江家</title>
+    <link rel ="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class = "SubWE-header">
+            <nav>
+                <a href= "index.html"><h1>江家</h1></a>
+                <div class="nav-links" id ="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">主页</a></li>
+                        <li><a href="floor.html">地板</a></li>
+                        <li><a href="Paint.html">油漆</a></li>
+                        <li><a href="WandE.html">水电</a></li>
+                        <li><a href="Wooding.html">木工</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+</div>
+        </section>
+<!-------------WE can--------------->
+<section class="example2">
+    <h1>展示项目</h1>
+    <dive class ="cloum">
+        <div class ="projectRow">
+            <div class = "project-col">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/bathtub.JPG">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>浴缸/Bathtub</h2>
+                        <p>泡澡浴缸</p>
+                        <p>空氣浴缸</p>
+                        <p>組合浴缸</p>
+                        <p>漩渦浴缸</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class = "project-col">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                          <div class="flip-box-front">
+                            <img src="images/toilet.jpg">
+                          </div>
+                          <div class="flip-box-back">
+                            <h2>馬桶/Toilet</h2>
+                            <p>What an amazing city</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "project-col">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                                <img src="images/waterFilter.JPG">
+                              </div>
+                              <div class="flip-box-back">
+                                <h2>滤水器/Water Filter</h2>
+                                <p>What an amazing city</p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+            </div>
+            <div class ="projectRow">
+                <div class = "project-col">
+                    <img src = "images/W.JPG">
+                    </div>
+                    <div class = "project-col">
+                        <img src = "images/W1.JPG">
+                        </div>
+                        <div class = "project-col">
+                            <img src = "images/W2.JPG">
+                            </div>
+            </div>
+            <div class ="projectRow">
+                <div class = "project-col">
+                    <img src = "images/W3.JPG">
+                    </div>
+                    <div class = "project-col">
+                        <img src = "images/W4.JPG">
+                        </div>
+                        <div class = "project-col">
+                            <img src = "images/W5.JPG">
+                            </div>
+            </div>
+            <div class ="projectRow">
+                <div class = "project-col">
+                    <img src = "images/W6.JPG">
+                    </div>
+                    <div class = "project-col">
+                        </div>
+                        <div class = "project-col">
+                        </div>
+    </dive>
+</section>
+
+<!-------------End WE can--------------->
+
+<!--------Java menu----------->        
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    </script>
+
+
+<!-----end java menu------------>
+        </body>
+</html>

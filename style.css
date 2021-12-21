@@ -1,0 +1,482 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Zhi Mang Xing', cursive;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header h1{
+    padding: 8px 12px;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 8px rgb(0, 183, 255);
+}
+.header a{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    padding: 8px 13px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.7);
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 80%;
+}
+.text-box{
+width: 90%;
+color: #fff;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-shadow: 1px 3px rgba(0, 0, 0, 0.7);
+text-align: center;
+}
+.text-box h1{
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.7);
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.7);
+}
+nav .fa{
+    display: none;
+}
+
+/*-------------Phone Mode---------------*/
+@media(max-width:700px){
+    .header h1{
+        padding: 8px 20px;
+    }
+    .text-box h1{
+        font-size: 40px;
+    }
+    .text-box p{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #00c3ff;
+        height: 705.5vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 3;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .row{
+        flex-direction:column
+    }
+    .projectRow{
+        flex-direction:column
+    }
+    .example h1{
+        font-size: 10px;
+    }
+    .example p{
+        font-size: 10px;
+    }
+    .text {
+
+        font-size: 10px;
+    }
+}
+
+/*-------------WE can---------------*/
+.example{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    background: linear-gradient(70deg,rgb(0,0,0),rgb(255, 255, 255));
+}
+.example h1{
+    color: beige;
+    font-size: 40px;
+    text-shadow: 1px 8px rgba(0, 0, 0, 0.7);
+}
+.example p{
+    color: #fff;
+    font-size: 30px;
+    padding-top: 10px;
+    text-shadow: 1px 5px rgba(0, 0, 0, 0.7);
+}
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.cloum{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    flex-basis: 55%;
+}
+.right{
+    flex-basis: 45%;
+}
+.container {
+    margin-top: 50px;
+    position: relative;
+    flex-basis: auto;
+}
+  .image {
+    display: block;
+    width: 80%;
+    height: auto;
+    max-height: 800px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 10%;
+    transition: .5s ease;
+  }
+  .container:hover .overlay {
+    width: 80%;
+    left: 0;
+    opacity: .8;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .detailInf{
+      flex-basis: 10%;
+      background: #f44336;
+      border-radius: 10px;
+      padding: 7px 0;
+      box-sizing: border-box;
+  }
+
+  /*-------------we can 2---------------*/
+.container2 {
+    flex-basis: auto;
+    margin-top: 0;
+    position: relative;
+  }
+  
+  .image2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+  }
+  
+  .overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 10%;
+    transition: .5s ease;
+  }
+  
+  .container2:hover .overlay2 {
+    width: 100%;
+    opacity: .8;
+  }
+  
+  .text2 {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+/*-------------We can 2 end---------------*/
+
+/*-------------We can 3---------------*/
+/*-------------We can 3 end---------------*/
+
+/*-------------WE can end---------------*/
+
+/*-------------项目展示---------------*/
+.example-project{
+    margin:auto;
+    text-align: center;
+    padding-top: 20px;
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.7),rgba(0, 0, 0, 0.7));
+}
+.example-project h1{
+    font-size: 40px;
+    color: black;
+    text-shadow: 1px 3px rgb(255, 255, 255);
+}
+.example-project p{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    line-height: 22px;
+    padding-top: 10px;
+    text-shadow: 1px 3px rgb(255, 255, 255);
+}
+.projectRow{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+.project-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: auto;
+}
+.project-col img{
+    width: 100%;
+    border-radius: 10px;
+    max-height: 600px;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    opacity: .8;
+    background: rgba(0, 204, 255, 0.7);
+}
+.layer h3{
+    width: 100%;
+    color:#fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 40%;
+    opacity: 1;
+}
+
+
+/*-------------地板---------------*/
+.Sub-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("images/floorBac.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.Sub-header a{
+    text-decoration: none;
+}
+.Sub-header h1{
+    padding: 8px 12px;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 8px rgb(0, 183, 255);
+}
+.example2{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    background: linear-gradient(70deg,rgb(0,0,0),rgb(255, 255, 255));;
+}
+.example2 h1{
+    color: beige;
+    font-size: 40px;
+    text-shadow: 1px 8px rgba(0, 0, 0, 0.7);
+}
+.example2 p{
+    color: #fff;
+    font-size: 30px;
+    padding-top: 10px;
+    text-shadow: 1px 5px rgba(0, 0, 0, 0.7);
+}
+.flip-box {
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    border-radius: 10px;
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    border-radius: 10px;
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-box-back h2{
+    font-size: 60px;
+    color: #000000;
+    text-shadow: 1px 5px rgba(255, 255, 255, 0.7);
+  }
+  .flip-box-back P{
+      font-size: 30px;
+  }
+/*-------------地板 END---------------*/
+
+/*-------------水電---------------*/
+.SubWE-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("images/electricianBackGround.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.SubWE-header a{
+    text-decoration: none;
+}
+.SubWE-header h1{
+    padding: 8px 12px;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 8px rgb(0, 183, 255);
+}
+/*-------------水電 END---------------*/
+
+/*-------------油漆---------------*/
+.SubP-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("images/paintBack.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.SubP-header a{
+    text-decoration: none;
+}
+.SubP-header h1{
+    padding: 8px 12px;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 8px rgb(0, 183, 255);
+}
+/*-------------油漆 END---------------*/
+
+
+/*-------------木工---------------*/
+.SubW-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("images/woodBackground.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.SubW-header a{
+    text-decoration: none;
+}
+.SubW-header h1{
+    padding: 8px 12px;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 8px rgb(0, 183, 255);
+}
+/*-------------木工 END---------------*/

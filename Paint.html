@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content = "width = device-width, initial-scale =1.0">
+    <title>江家</title>
+    <link rel ="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class = "SubP-header">
+            <nav>
+                <a href= "index.html"><h1>江家</h1></a>
+                <div class="nav-links" id ="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">主页</a></li>
+                        <li><a href="floor.html">地板</a></li>
+                        <li><a href="Paint.html">油漆</a></li>
+                        <li><a href="WandE.html">水电</a></li>
+                        <li><a href="Wooding.html">木工</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+</div>
+        </section>
+<!-------------WE can--------------->
+<section class="example2">
+    <h1>展示项目</h1>
+    <dive class ="cloum">
+        <div class ="projectRow">
+            <div class = "project-col">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="images/flatPaint.jpg"  width="500" height="800">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2>亚光漆/Flat Paint</h2>
+                        <p>完全没有光泽，对隐藏瑕疵很有效，但是易沾上污渍，一般用在天花板上</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class = "project-col">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                          <div class="flip-box-front">
+                            <img src="images/Semi Gloss.jpg" width="500" height="800">
+                          </div>
+                          <div class="flip-box-back">
+                            <h2>半光漆Semi Gloss</h2>
+                            <p>亮度比平光漆更高，容易清洁，一般橱柜或者拉线容易使用</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "project-col">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                              <div class="flip-box-front">
+                                <img src="images/eggshell.jpg" width="500" height="800">
+                              </div>
+                              <div class="flip-box-back">
+                                <h2>亮光漆Eggshell</h2>
+                                <p>也叫蛋壳漆，很适合用在客厅和卧室</p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class = "project-col">
+                      <div class="flip-box">
+                          <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                              <img src="images/Gloss.jpg" width="500" height="800">
+                            </div>
+                            <div class="flip-box-back">
+                              <h2>亮漆Gloss</h2>
+                              <p>也叫珠光漆，非常闪耀，有提亮房间的效果，适合用在采光不好的房间</p>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+            </div>
+            <div class ="projectRow">
+                <div class = "project-col">
+                    <img src = "images/E1.JPG">
+                    </div>
+                    <div class = "project-col">
+                        <img src = "images/E2.JPG">
+                        </div>
+                        <div class = "project-col">
+                            <img src = "images/E3.JPG">
+                            </div>
+            </div>
+            <div class ="projectRow">
+                <div class = "project-col">
+                    <img src = "images/E4.JPG">
+                    </div>
+                    <div class = "project-col">
+                        <img src = "images/E5.JPG">
+                        </div>
+                        <div class = "project-col">
+                            <img src = "images/E6.JPG">
+                            </div>
+            </div>
+            <div class ="projectRow">
+                <div class = "project-col">
+                    <img src = "images/E7.JPG">
+                    </div>
+                    <div class = "project-col">
+                        <img src = "images/E8.JPG">
+                        </div>
+                        <div class = "project-col">
+                            <img src = "images/E9.JPG">
+                        </div>
+    </dive>
+</section>
+
+<!-------------End WE can--------------->
+
+<!--------Java menu----------->        
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    </script>
+
+
+<!-----end java menu------------>
+        </body>
+</html>
