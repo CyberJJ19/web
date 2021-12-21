@@ -170,8 +170,16 @@ nav .glyphicon{
 .left{
     flex-basis: 55%;
 }
+.left p{
+    margin: 2% 5%;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.459); 
+}
 .right{
     flex-basis: 45%;
+}
+.right p{
+    margin: 2% 5%;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.459); 
 }
 .container {
     margin-top: 50px;
@@ -215,13 +223,12 @@ nav .glyphicon{
     font-family: "Microsoft Yahei",MSYH;
   }
   .detailInf{
-      flex-basis: auto;
-      width: 50%;
-      position: relative;
-      background: #f44336;
+      width: 80%;
+      background: #00a2ff;
       border-radius: 30px;
       padding: 1px 1px;
       box-sizing: content-box;
+      margin: 2% 5%;
   }
 
   /*-------------we can 2---------------*/
