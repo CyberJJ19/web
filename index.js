@@ -8,6 +8,6 @@ app.get('/', (req, res) =>{
     res.redirect('/index.html');
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`listening on ${port}`);
 });
