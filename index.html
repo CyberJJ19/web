@@ -3,11 +3,12 @@
 <head>
     <meta name = "viewport" content = "width = device-width, initial-scale =1">
     <title>江家</title>
+    <script src ="node_modules/bootstrap/dist/js/bootstrap.bundle.js" async defer></script>
+    <link rel ="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel ="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
-    <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body style="overflow-x: hidden">
         <section class = "header">
@@ -32,27 +33,25 @@
         </section>
 <!-------------WE can--------------->
 <section class="example">
-    <h1>What We can Do!</h1>
-    <p>以下是依照类别详细描述我们可以做到的事情</p>
-    <dive class ="cloum">
+    <h1 style="font-size: 100px;">What We can Do!</h1>
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: none; color: black; text-shadow:rgb(255, 255, 255) 1px 0 10px;">以下是依照类别详细描述我们可以做到的事情</p>
+    <div class ="cloum">
         <div class = "row">
-            <div class ="left">
-                <div class = "detailInf">
-                    <h1>详细描述</h1>
-                </div>
-                <p>好的墙面漆施工不仅能给家居带来光鲜的外表，还能掩盖隐蔽工程施工的瑕疵。我們将墙面起皮及松动处清除干净，有裂缝的地方用白乳胶贴住裂缝。之後再批刮腻子和打磨讓墻壁更加光滑之後再刷底漆。底漆刷完后在找补確保沒有任何遺漏最后刷面漆。</p>
-            </div>
-            <div class = "right">
+            <div class="col">
+                <div class="d-flex justify-content-center font-weight-bold border border-success rounded-pill shadow p-3 mb-5" style=" background-color: rgb(0, 195, 255)"><h1 style="text-shadow:rgb(0, 0, 0) 1px 0 10px; color: white; font-size: 50px;">详细描述</h1></div>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: none; color: black; text-shadow:rgb(255, 255, 255) 1px 0 10px;">好的墙面漆施工不仅能给家居带来光鲜的外表，还能掩盖隐蔽工程施工的瑕疵。我們将墙面起皮及松动处清除干净，有裂缝的地方用白乳胶贴住裂缝。之後再批刮腻子和打磨讓墻壁更加光滑之後再刷底漆。底漆刷完后在找补確保沒有任何遺漏最后刷面漆。</p>
+              </div>
+              <div class="col">
                 <div class="container">
                     <img src="images/painting.jpg" class="image">
                     <div class="overlay">
                         <div class="text">油漆/Painting</div>
                     </div>
                   </div>
-            </div>
+              </div>
         </div>
             <div class = "row">
-                <div class = "left">
+                <div class="col">
                     <div class="container2">
                         <img src="images/Flooring.jpg" class="image2">
                         <div class="overlay2">
@@ -60,24 +59,20 @@
                         </div>
                       </div>
                 </div>
-                <div class ="right">
-                    <div class = "detailInf">
-                        <h1>详细描述</h1>
-                    </div>
-                    <p>每當人們入住新家或是整修舊屋時，總是難以避免裝潢自己的家鋪地板也是其中一項重要的工程。我們通過直鋪、平鋪、此三種施工方法依據施工程序以及用料的不同而各有優缺點來施工</p>
+                <div class="col">
+                    <div class="d-flex justify-content-center font-weight-bold border border-success rounded-pill shadow p-3 mb-5" style=" background-color: rgb(0, 195, 255)"><h1 style="text-shadow:rgb(0, 0, 0) 1px 0 10px; color: white; font-size: 50px;">详细描述</h1></div>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: none; color: black; text-shadow:rgb(255, 255, 255) 1px 0 10px;">每當人們入住新家或是整修舊屋時，總是難以避免裝潢自己的家鋪地板也是其中一項重要的工程。我們通過直鋪、平鋪、此三種施工方法依據施工程序以及用料的不同而各有優缺點來施工</p>
                 </div>
             </div>
             <div class = "row">
-                <div class ="left">
-                    <div class = "detailInf">
-                        <h1>详细描述</h1>
-                    </div>
-                    <p>你的热水器坏了吗？没问题。
+                <div class="col">
+                    <div class="d-flex justify-content-center font-weight-bold border border-success rounded-pill shadow p-3 mb-5" style=" background-color: rgb(0, 195, 255)"><h1 style="text-shadow:rgb(0, 0, 0) 1px 0 10px; color: white; font-size: 50px;">详细描述</h1></div>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: none; color: black; text-shadow:rgb(255, 255, 255) 1px 0 10px;">你的热水器坏了吗？没问题。
                         有跑马桶吗？我们已为您提供保障。
                         厌倦了那个漏水的水槽？不用担心。
                     我們提供各種類型的管道維修放心交給我們處理</p>
                 </div>
-                <div class = "right">
+                <div class="col">
                     <div class="container">
                         <img src="images/water.jpg" class="image">
                         <div class="overlay">
@@ -87,7 +82,7 @@
                 </div>
             </div>
             <div class = "row">
-                <div class = "left">
+                <div class="col">
                     <div class="container2">
                         <img src="images/plumber.jpg" class="image2">
                         <div class="overlay2">
@@ -96,21 +91,17 @@
                         </div>
                       </div>
                 </div>
-                <div class ="right">
-                    <div class = "detailInf">
-                        <h1>详细描述</h1>
-                    </div>
-                    <p>我们可以检测您的家庭或企业电气系统中是否有问题亦或是如何潛在的問題。我们提供先进的电气服务和維修以满足您的需求。有任何需要更改綫路亦或是引入新的綫路都可以聯係我們</p>
+                <div class="col">
+                    <div class="d-flex justify-content-center font-weight-bold border border-success rounded-pill shadow p-3 mb-5" style=" background-color: rgb(0, 195, 255)"><h1 style="text-shadow:rgb(0, 0, 0) 1px 0 10px; color: white; font-size: 50px;">详细描述</h1></div>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: none; color: black; text-shadow:rgb(255, 255, 255) 1px 0 10px;">我们可以检测您的家庭或企业电气系统中是否有问题亦或是如何潛在的問題。我们提供先进的电气服务和維修以满足您的需求。有任何需要更改綫路亦或是引入新的綫路都可以聯係我們</p>
                 </div>
             </div>
             <div class = "row">
-                <div class ="left">
-                    <div class = "detailInf">
-                        <h1>详细描述</h1>
-                    </div>
-                    <p>我們將根據您的需求以及空間來製作出您所需要的製品</p>
+                <div class="col">
+                    <div class="d-flex justify-content-center font-weight-bold border border-success rounded-pill shadow p-3 mb-5" style=" background-color: rgb(0, 195, 255)"><h1 style="text-shadow:rgb(0, 0, 0) 1px 0 10px; color: white; font-size: 50px;">详细描述</h1></div>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: none; color: black; text-shadow:rgb(255, 255, 255) 1px 0 10px;">我們將根據您的需求以及空間來製作出您所需要的製品</p>
                 </div>
-                <div class = "right">
+                <div class="col">
                     <div class="container">
                         <img src="images/WoodWorking.jpg" class="image">
                         <div class="overlay">
@@ -119,13 +110,26 @@
                       </div>
                 </div>
             </div>
-    </dive>
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div>
 </section>
 <!-------------End WE can--------------->
 
 <!-------------项目展示--------------->
 <section class="example-project">
-    <h1>展示项目</h1>
+    <div class ="cloum">
+        <h1>展示项目</h1>
     <p>以下是一些已完成项目的展示</p>
     <div class ="projectRow">
         <div class = "project-col">
@@ -145,8 +149,9 @@
                     <div class ="layer">
                         <h3>木工/WoodWorking</h3>
                     </div>
-                    </div>
+                </div>
         </div>
+    </div>
 </section>
 <!-------------End 项目展示--------------->
 <!--------Java menu----------->        
