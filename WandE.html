@@ -4,10 +4,12 @@
     <meta name = "viewport" content = "width = device-width, initial-scale =1.0">
     <title>江家</title>
     <link rel ="stylesheet" href="style.css">
+    <script src ="node_modules/bootstrap/dist/js/bootstrap.bundle.js" async defer></script>
+    <link rel ="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
-    <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
         <section class = "SubWE-header">
@@ -77,37 +79,7 @@
                           </div>
                     </div>
             </div>
-            <div class ="projectRow">
-                <div class = "project-col">
-                    <img src = "images/W.JPG">
-                    </div>
-                    <div class = "project-col">
-                        <img src = "images/W1.JPG">
-                        </div>
-                        <div class = "project-col">
-                            <img src = "images/W2.JPG">
-                            </div>
-            </div>
-            <div class ="projectRow">
-                <div class = "project-col">
-                    <img src = "images/W3.JPG">
-                    </div>
-                    <div class = "project-col">
-                        <img src = "images/W4.JPG">
-                        </div>
-                        <div class = "project-col">
-                            <img src = "images/W5.JPG">
-                            </div>
-            </div>
-            <div class ="projectRow">
-                <div class = "project-col">
-                    <img src = "images/W6.JPG">
-                    </div>
-                    <div class = "project-col">
-                        </div>
-                        <div class = "project-col">
-                        </div>
-            </div>
+            <div id ="imgList"></div>
             <ul class="circles">
               <li></li>
               <li></li>
@@ -126,8 +98,11 @@
 <!-------------End WE can--------------->
 
 <!--------Java menu----------->        
-<script>
+<script >
     var navLinks = document.getElementById("navLinks");
+    var imagesTotal = 6;
+    var imageName = "W";
+    var imageContiner = document.getElementById("imgList");
 
     function showMenu(){
         navLinks.style.right ="0";
@@ -135,9 +110,30 @@
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
+
+function createImageNode(index) {
+    var img = document.createElement('img');
+    img.src = "images/"+imageName+index+".JPG";
+    return img;
+}
+function createImageContiner(index){
+  var div = document.createElement('div');
+  div.className = "project-col";
+  div.appendChild(createImageNode(index));
+  return div;
+}
+
+for(var i = 0; i < imagesTotal/3; i++){
+  var parentElement = document.createElement('div');
+  parentElement.className = "projectRow";
+  for(var c = i+1; c <= i+3; c++){
+    parentElement.appendChild(createImageContiner(c));
+  }
+  imageContiner.appendChild(parentElement);
+}
     </script>
 
 
 <!-----end java menu------------>
-        </body>
+</body>
 </html>
