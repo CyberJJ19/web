@@ -16,6 +16,7 @@ overflow-x: hidden;
     position: relative;
 }
 .header h1{
+    margin: 0px;
     padding: 8px 12px;
     font-size: 70px;
     color: rgb(0, 0, 0);
@@ -148,7 +149,7 @@ nav .glyphicon{
 .overlay {
     position: absolute;
     bottom: 0;
-    left: 98%;
+    left: 100%;
     right: 0;
     background-color: #008CBA;
     overflow: hidden;
@@ -157,8 +158,8 @@ nav .glyphicon{
     transition: .5s ease;
   }
   .container:hover .overlay {
-    width: 96%;
-    left: 25px;
+    width: 98%;
+    left: 16px;
     opacity: .8;
   }
   .overlay2 {
@@ -273,7 +274,6 @@ nav .glyphicon{
       .overlay2 {
         height: 20%;
       }
-      
       .container2:hover .overlay2 {
         left: 31px;
       }
