@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     </head>
     <body style="overflow-x: hidden">
         <section class = "Sub-header">
             <nav>
                 <a href= "index.html"><h1>老江</h1></a>
                 <div class="nav-links" id ="navLinks" >
-                    <i class="glyphicon glyphicon-remove" style="color:rgb(0, 0, 0);"onclick="hideMenu()" ></i>
+                    <i class="re glyphicon glyphicon-remove"onclick="hideMenu()" ></i>
                     <ul>
                         <li><a href="index.html">主页</a></li>
                         <li><a href="floor.html">地板</a></li>
@@ -26,7 +27,6 @@
                 </div>
                 <i class="glyphicon glyphicon-align-justify" onclick="showMenu()" ></i>
             </nav>
-</div>
         </section>
 <!-------------WE can--------------->
 <section class="example2">
@@ -117,11 +117,14 @@ function createImageContiner(index){
   return div;
 }
 
-for(var i = 0; i < imagesTotal/3; i++){
+var count =1;
+for(var i = 0; i < Math.abs(imagesTotal/3); i++){
   var parentElement = document.createElement('div');
   parentElement.className = "projectRow";
-  for(var c = i+1; c <= i+3; c++){
+  var loopCount =(count+2 >imagesTotal)?imagesTotal:count+2;
+  for(var c = count; c <= loopCount; c++){
     parentElement.appendChild(createImageContiner(c));
+    count++;
   }
   imageContiner.appendChild(parentElement);
 }

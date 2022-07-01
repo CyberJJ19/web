@@ -14,6 +14,7 @@ overflow-x: hidden;
     background-position: center;
     background-size: cover;
     position: relative;
+    text-decoration: none;
 }
 .header h1{
     margin: 0px;
@@ -21,9 +22,6 @@ overflow-x: hidden;
     font-size: 70px;
     color: rgb(0, 0, 0);
     text-shadow: 1px 8px rgb(0, 183, 255);
-}
-.header a{
-    text-decoration: none;
 }
 .nav{
     display: flex;
@@ -519,7 +517,7 @@ nav .glyphicon{
 .projectRow{
     margin-top: 1%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .project-col{
     flex-basis: 31%;
@@ -531,7 +529,8 @@ nav .glyphicon{
 .project-col img{
     width: 100%;
     border-radius: 10px;
-    max-height: 700px;
+    min-height: 500px;
+    max-height: 500px;
     display: block;
 }
 
@@ -548,6 +547,7 @@ nav .glyphicon{
     text-decoration: none;
 }
 .Sub-header h1{
+    margin: 0px;
     padding: 8px 12px;
     font-size: 70px;
     color: rgb(0, 0, 0);
@@ -651,6 +651,7 @@ nav .glyphicon{
     text-decoration: none;
 }
 .SubWE-header h1{
+    margin: 0px;
     padding: 8px 12px;
     font-size: 70px;
     color: rgb(0, 0, 0);
@@ -683,6 +684,7 @@ font-size: 120px;
     text-decoration: none;
 }
 .SubP-header h1{
+    margin: 0px;
     padding: 8px 12px;
     font-size: 70px;
     color: rgb(0, 0, 0);
@@ -704,6 +706,7 @@ font-size: 120px;
     text-decoration: none;
 }
 .SubW-header h1{
+    margin:0;
     padding: 8px 12px;
     font-size: 70px;
     color: rgb(0, 0, 0);

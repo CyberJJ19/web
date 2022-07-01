@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     </head>
     <body style="overflow-x: hidden">
         <section class = "SubW-header">
             <nav>
                 <a href= "index.html"><h1>老江</h1></a>
                 <div class="nav-links" id ="navLinks">
-                  <i class="glyphicon glyphicon-remove" style="color:rgb(255, 255, 255);"onclick="hideMenu()" ></i>
+                  <i class="re glyphicon glyphicon-remove"onclick="hideMenu()" ></i>
                     <ul>
                         <li><a href="index.html">主页</a></li>
                         <li><a href="floor.html">地板</a></li>
@@ -32,47 +33,6 @@
 <section class="example2">
   <h1 style="font-size: 100px;">展示项目</h1>
     <dive class ="cloum">
-        <div class ="projectRow">
-            <div class = "project-col">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                      <div class="flip-box-front">
-                        <img src="images/b1.JPG">
-                      </div>
-                      <div class="flip-box-back">
-                        <h2 >地板</h2>
-                        <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: none; color: black; text-shadow:rgb(255, 255, 255) 1px 0 10px;"></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class = "project-col">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front">
-                            <img src="images/b2.JPG">
-                          </div>
-                          <div class="flip-box-back">
-                            <h2>地板</h2>
-                            <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: none; color: black; text-shadow:rgb(255, 255, 255) 1px 0 10px;"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class = "project-col">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                              <div class="flip-box-front">
-                                <img src="images/b3.JPG">
-                              </div>
-                              <div class="flip-box-back">
-                                <h2>地板</h2>
-                                <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: none; color: black; text-shadow:rgb(255, 255, 255) 1px 0 10px;"></p>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-            </div>
             <div id ="imgList"></div>
           <ul class="circles">
             <li></li>
@@ -94,7 +54,7 @@
 <!--------Java menu----------->        
 <script>
       var navLinks = document.getElementById("navLinks");
-    var imagesTotal = 8;
+    var imagesTotal = 26;
     var imageName = "WW";
     var imageContiner = document.getElementById("imgList");
 
@@ -107,7 +67,7 @@
 
 function createImageNode(index) {
     var img = document.createElement('img');
-    img.src = "images/"+imageName+index+".JPG";
+    img.src = "images/Wood/"+imageName+index+".JPG";
     return img;
 }
 function createImageContiner(index){
@@ -116,12 +76,14 @@ function createImageContiner(index){
   div.appendChild(createImageNode(index));
   return div;
 }
-
-for(var i = 0; i < imagesTotal/3; i++){
+var count =1;
+for(var i = 0; i < Math.abs(imagesTotal/3); i++){
   var parentElement = document.createElement('div');
   parentElement.className = "projectRow";
-  for(var c = i+1; c <= i+3; c++){
+  var loopCount =(count+2 >imagesTotal)?imagesTotal:count+2;
+  for(var c = count; c <= loopCount; c++){
     parentElement.appendChild(createImageContiner(c));
+    count++;
   }
   imageContiner.appendChild(parentElement);
 }
